@@ -1,0 +1,41 @@
+POST http://localhost:3000/users/register 
+Content-Type: application/json
+
+{
+  "email": "Jant@Doe.com",
+  "password" : "123456"
+}
+
+###
+POST http://localhost:3000/users/login 
+Content-Type: application/json
+
+{
+  "email": "james@bond.com",
+  "password" : "123456"
+}
+
+###
+
+POST http://localhost:3000/posts/new
+Content-Type: application/json
+
+{
+  "title": "Be awesome",
+  "body": "Some long text about sttuff",
+  "userId": 3
+}
+
+####
+
+GET http://localhost:3000/posts/all
+####
+
+GET http://localhost:3000/posts
+# valid token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphbWVzQGJvbmQuY29tIiwiaWF0IjoxNjM0Mjc0NTk4LCJleHAiOjE2MzQyNzgxOTh9.FNm4RQCMow2quq3j-TdWSXyux3GKtdupfvKh-iF_QrE
+# edited token
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pa2VAdHlzb24uY29tIiwiaWF0IjoxNjM0MjAxNjA1LCJleHAiOjE2MzQyMDUyMDV9.3Hc5zS0payqU59oRFJdQgsxieKWbD3prcLFOYIdXj2Q
+
+###
+DELETE  http://localhost:3000/posts/34
